@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22154" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="x2Q-ky-UMr">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22130"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Contest_Project" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ENTER YOUR EMAIL FOR A CHANCE TO WIN ONE OF OUR AWESOME TURKEY DAY PRIZES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qKa-C5-2eQ">
+                                <rect key="frame" x="52" y="220" width="289" height="96"/>
+                                <fontDescription key="fontDescription" name="HoeflerText-Italic" family="Hoefler Text" pointSize="18"/>
+                                <color key="textColor" red="0.97647058819999999" green="0.96470588239999999" blue="0.94901960780000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ThanksGivingmas" translatesAutoresizingMaskIntoConstraints="NO" id="pLt-FZ-kV3">
+                                <rect key="frame" x="76" y="76" width="241" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="n1B-xh-D8W"/>
+                                </constraints>
+                            </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Example@email.com" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YFZ-68-tBT">
+                                <rect key="frame" x="28" y="351" width="337" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="MO5-DV-Zkb"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wbS-86-eIW">
+                                <rect key="frame" x="135.66666666666666" y="429" width="121.99999999999997" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="ELB-qX-yL1"/>
+                                </constraints>
+                                <color key="tintColor" red="0.82745099070000006" green="0.56249688247891161" blue="0.21960783" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Submit Entry"/>
+                                <connections>
+                                    <action selector="submitButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Wk0-ob-jqB"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.70980392156862748" green="0.26666666666666666" blue="0.28235294117647058" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="YFZ-68-tBT" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="28" id="2cL-Wj-zU4"/>
+                            <constraint firstItem="qKa-C5-2eQ" firstAttribute="top" secondItem="pLt-FZ-kV3" secondAttribute="bottom" constant="16" id="3v8-Ry-kMb"/>
+                            <constraint firstItem="wbS-86-eIW" firstAttribute="top" secondItem="YFZ-68-tBT" secondAttribute="bottom" constant="44" id="8P6-xy-uyA"/>
+                            <constraint firstItem="pLt-FZ-kV3" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="76" id="9pp-jx-oyH"/>
+                            <constraint firstItem="YFZ-68-tBT" firstAttribute="centerX" secondItem="wbS-86-eIW" secondAttribute="centerX" id="But-Lj-q4R"/>
+                            <constraint firstItem="pLt-FZ-kV3" firstAttribute="centerX" secondItem="qKa-C5-2eQ" secondAttribute="centerX" id="WI6-WD-IZo"/>
+                            <constraint firstItem="qKa-C5-2eQ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="52" id="evg-VI-ruC"/>
+                            <constraint firstItem="pLt-FZ-kV3" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="-27" id="g1l-nU-1hw"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="wbS-86-eIW" secondAttribute="bottom" constant="354" id="mfg-lF-EqN"/>
+                            <constraint firstItem="YFZ-68-tBT" firstAttribute="top" secondItem="qKa-C5-2eQ" secondAttribute="bottom" constant="35" id="nOV-A8-H8J"/>
+                            <constraint firstItem="pLt-FZ-kV3" firstAttribute="centerX" secondItem="YFZ-68-tBT" secondAttribute="centerX" id="qLU-pY-WYe"/>
+                            <constraint firstItem="pLt-FZ-kV3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="sso-SX-fql"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="8AK-KI-r0i"/>
+                    <connections>
+                        <outlet property="emailTextField" destination="YFZ-68-tBT" id="yJh-8T-3BR"/>
+                        <outlet property="thanksGivingMasImage" destination="pLt-FZ-kV3" id="ZJn-Bf-aKx"/>
+                        <segue destination="wYQ-N1-jVc" kind="show" identifier="SubmitEntrySegue" id="0fl-WV-QSW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1040.4580152671756" y="-27.464788732394368"/>
+        </scene>
+        <!--Second View Controller-->
+        <scene sceneID="mdU-ol-EJ2">
+            <objects>
+                <viewController id="wYQ-N1-jVc" customClass="SecondViewController" customModule="Contest_Project" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="oCD-eE-3kj">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You have successfully entered the contest." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WYI-L4-QBi">
+                                <rect key="frame" x="30" y="126" width="333" height="60"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <color key="textColor" red="0.97647058819999999" green="0.96470588239999999" blue="0.94901960780000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="FvJ-r6-FWE"/>
+                        <color key="backgroundColor" red="0.70980392160000005" green="0.2666666667" blue="0.28235294119999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="WYI-L4-QBi" firstAttribute="centerX" secondItem="oCD-eE-3kj" secondAttribute="centerX" id="7ku-KR-1rk"/>
+                            <constraint firstItem="WYI-L4-QBi" firstAttribute="top" secondItem="FvJ-r6-FWE" secondAttribute="top" constant="23" id="EjZ-RA-V4x"/>
+                            <constraint firstAttribute="trailing" secondItem="WYI-L4-QBi" secondAttribute="trailing" constant="30" id="HYd-QD-gWW"/>
+                            <constraint firstItem="WYI-L4-QBi" firstAttribute="leading" secondItem="oCD-eE-3kj" secondAttribute="leading" constant="30" id="ZxO-7K-vYV"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="TxE-rm-mpF"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EW2-Ny-NfH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1869.4656488549617" y="-27.464788732394368"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="iB7-JD-9WL">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="x2Q-ky-UMr" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="q3I-8v-8HX">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" red="0.0" green="0.043969959429999997" blue="0.085253314390000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="gHA-a0-MHD"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Fwg-lb-T22" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="113.74045801526717" y="-27.464788732394368"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ThanksGivingmas" width="500" height="500"/>
+    </resources>
+</document>
